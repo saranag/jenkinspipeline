@@ -1,1 +1,27 @@
+pipeline{
+    agent any
 
+    tools{
+        maven "jenkins-mvn"
+    }
+
+    stages{
+
+        stage('Git Checkout'){
+            steps{
+
+            git 'https://github.com/codewithz/dxc-web-app.git'
+            }
+        }
+
+        stage('Maven Build'){
+            steps{
+            bat """
+                cd mywebapp
+                C:\\softinst\\apache\\maven\\bin\\mvn clean package
+            """
+            }
+        }
+
+    }
+}
