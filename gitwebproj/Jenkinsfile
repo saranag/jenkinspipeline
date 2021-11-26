@@ -39,6 +39,7 @@ pipeline{
                bat """
                    copy %buildlocation% %webapplocation%
                    set JAVA_HOME=C:\\softinst\\java\\jdk8
+                   set %path%=%path%;.;C:\\softinst\\java\\jdk8\\bin;
                    set CATALINA_HOME=C:\\softinst\\apache\\tomcat
                    %binlocation%
                """
