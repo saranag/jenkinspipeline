@@ -14,7 +14,7 @@ pipeline{
 				
 				git 'https://github.com/jenkins-docs/simple-java-maven-app.git'
 				
-				bat 'mvn clean install'
+				bat 'mvn clean test package'
 			
 			}
 		}
