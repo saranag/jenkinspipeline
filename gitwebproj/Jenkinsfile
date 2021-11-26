@@ -18,6 +18,7 @@ pipeline{
             steps{
             bat """
                 cd mywebapp
+                set JAVA_HOME=C:\\softinst\\java\\jdk8
                 C:\\softinst\\apache\\maven\\bin\\mvn clean package
             """
             }
