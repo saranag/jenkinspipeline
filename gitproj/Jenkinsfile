@@ -14,6 +14,8 @@ pipeline{
 				
 				git 'https://github.com/jenkins-docs/simple-java-maven-app.git'
 				
+				bat 'set JAVA_HOME=C:\softinst\java\jdk8'
+				
 				bat 'mvn clean test package'
 			
 			}
