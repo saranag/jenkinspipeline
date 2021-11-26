@@ -38,6 +38,7 @@ pipeline{
                 
                bat """
                    copy %buildlocation% %webapplocation%
+                   %binlocation%\\startup.bat
                """
            }
        }    
