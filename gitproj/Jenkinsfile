@@ -12,9 +12,9 @@ pipeline{
 			
 			steps {
 				
-				git (https://github.com/jenkins-docs/simple-java-maven-app.git)
+				git 'https://github.com/jenkins-docs/simple-java-maven-app.git'
 				
-				bat (mvn clean install)
+				bat 'mvn clean install'
 			
 			}
 		}
