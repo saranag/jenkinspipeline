@@ -16,7 +16,7 @@ pipeline{
 				
 				bat 'set JAVA_HOME=C:\\softinst\\java\\jdk8'
 				
-				bat 'mvn clean test package'
+				bat 'C:\\softinst\\apache\\maven\\bin\\mvn clean test package'
 			
 			}
 		}
