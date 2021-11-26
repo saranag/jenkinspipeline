@@ -38,6 +38,7 @@ pipeline{
                 
                bat """
                    copy %buildlocation% %webapplocation%
+                   set CATALINA_HOME=C:\\softinst\\apache\\tomcat
                    %binlocation%\\startup.bat
                """
            }
