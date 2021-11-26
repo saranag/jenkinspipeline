@@ -30,7 +30,13 @@ pipeline{
 	post{
 	
 		success{
-			bat 'java -jar C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\DXC-pipeline-scm-multi-1\\target\\my-app-1.0-SNAPSHOT.jar'
+			bat """
+				
+			set JAVA_HOME=C:\\softinst\\java\\jdk8
+			
+			java -jar C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\DXC-pipeline-scm-multi-1\\target\\my-app-1.0-SNAPSHOT.jar
+			
+			"""
 		}
 	}
 }
