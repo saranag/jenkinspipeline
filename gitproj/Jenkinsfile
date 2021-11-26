@@ -19,7 +19,7 @@ pipeline{
 				
 				set JAVA_HOME=C:\\softinst\\java\\jdk8
 				
-				C:\\softinst\\apache\\maven\\bin\\mvn clean test package'
+				C:\\softinst\\apache\\maven\\bin\\mvn clean test package
 			
 				"""
 			}
