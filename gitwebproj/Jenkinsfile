@@ -6,7 +6,7 @@ pipeline{
     }
     
     environment{
-        binlocation='C:\\softinst\\apache\\tomcat\\bin'
+        binlocation='C:\\softinst\\apache\\tomcat\\bin\\startup.bat'
         webapplocation='C:\\softinst\\apache\\tomcat\\webapps\\'
         buildlocation='C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\DXC-pipeline-scm-multi\\mywebapp\\target\\mywebapp.war'
     }
@@ -40,7 +40,7 @@ pipeline{
                    copy %buildlocation% %webapplocation%
                    set JAVA_HOME=C:\\softinst\\java\\jdk8
                    set CATALINA_HOME=C:\\softinst\\apache\\tomcat
-                   %binlocation%\\startup.bat
+                   %binlocation%
                """
            }
        }    
